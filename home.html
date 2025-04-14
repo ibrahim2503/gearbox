@@ -50,12 +50,41 @@
                         <a class="nav-link" href="#">Contact-Us</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-danger me-3" type="button"
-                    onclick="window.location.href='login.html'">Login</button>
-                <button class="btn btn-outline-danger" type="submit"
-                    onclick="window.location.href='login.html'">Sign-up</button>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-danger" type="submit">Sign Up</button>
+                    <button class="btn btn-danger ms-3" type="button" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Sign In</button>
+                </form>
             </div>
         </div>
+    </nav>
+    <!-- modal  -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal  -->
+    </div>
+    </div>
     </nav>
     <div class="carousel-inner home-pic mb-5">
         <div class="carousel-item active">
@@ -65,7 +94,7 @@
                 <p class="fs-3 fw-bold text-light">Your Ultimate Visual Storytelling Partner, Redefining Brand Imagery
                 </p>
                 <!-- From Uiverse.io by adamgiebl -->
-                <button class="button mx-auto fs-4">
+                <button class="button-book button mx-auto fs-4">
                     <div class="svg-wrapper-1">
                         <div class="svg-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -78,7 +107,6 @@
                     </div>
                     <span>Book Now</span>
                 </button>
-
             </div>
         </div>
     </div>
@@ -227,15 +255,49 @@
         </div>
     </div>
     <!-- join us  -->
+    <!-- carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100 img-fluid" src="imgs/Home+page+images+14.png" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="imgs/Home+page+images+16.png" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="imgs/Home+page+images+17.png" alt="Slide 3">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="imgs/Home+page+images+18.png" alt="Slide 4">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="imgs/Home+page+images+19.png" alt="Slide 5">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="imgs/Home+page+images+20.png" alt="Slide 6">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100 img-fluid" src="imgs/Home+page+images+21.png" alt="Slide 7">
+        </div>
+    </div>
 
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>    <!-- carousel -->
+    <!-- Make it stand out -->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
         <div class="text-center">
             <h1 class="main-heading display-1 text-uppercase fw-bold">Make it stand out</h1>
             <p class="sub-heading fs-5">Your Ultimate Visual Storytelling Partner, Redefining Brand Imagery.</p>
         </div>
     </div>
-
-</html>
+    <!-- Make it stand out -->
     <!-- footer  -->
     <footer class="bg-light text-center text-lg-start mt-5">
         <div class="text-center p-3 bg-danger text-light">

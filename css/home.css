@@ -58,7 +58,7 @@ html {
     }
 }
 
-.button {
+.button-book {
     position: relative;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
@@ -85,12 +85,12 @@ html {
     transition: all 0.3s ease-in-out;
 }
 
-.button:hover {
+.button-book:hover {
     transform: scale(1.05);
     border-color: #fff9;
 }
 
-.button:hover .icon {
+.button-book:hover .icon {
     transform: translate(4px);
     -webkit-transform: translate(4px);
     -moz-transform: translate(4px);
@@ -98,12 +98,12 @@ html {
     -o-transform: translate(4px);
 }
 
-.button:hover::before {
+.button-book:hover::before {
     animation: shine 1.5s ease-out infinite;
     -webkit-animation: shine 1.5s ease-out infinite;
 }
 
-.button::before {
+.button-book::before {
     content: "";
     position: absolute;
     width: 100px;
@@ -370,7 +370,7 @@ li {
 }
 
 /* From Uiverse.io by adamgiebl */
-button {
+.button-book {
     font-family: inherit;
     font-size: 20px;
     background: royalblue;
@@ -386,27 +386,27 @@ button {
     cursor: pointer;
 }
 
-button span {
+.button-book span {
     display: block;
     margin-left: 0.3em;
     transition: all 0.3s ease-in-out;
 }
 
-button svg {
+.button-book svg {
     display: block;
     transform-origin: center center;
     transition: transform 0.3s ease-in-out;
 }
 
-button:hover .svg-wrapper {
+.button-book:hover .svg-wrapper {
     animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-button:hover svg {
+.button-book:hover svg {
     transform: translateX(1.2em) rotate(45deg) scale(1.1);
 }
 
-button:hover span {
+.button-book:hover span {
     transform: translateX(6em);
     -webkit-transform: translateX(6em);
     -moz-transform: translateX(6em);
@@ -414,7 +414,7 @@ button:hover span {
     -o-transform: translateX(6em);
 }
 
-button:active {
+.button-book:active {
     transform: scale(0.95);
 }
 
@@ -471,12 +471,87 @@ button:active {
 .body-img-2 {
     background-image: url("../imgs/Home+page+images+11.jpeg")
 }
+
 .body-img-3 {
     background-image: url("../imgs/Home+page+images+10.jpeg")
 }
+
 .body-img-4 {
     background-image: url("../imgs/HeadHunting-+Personal+Branding.jpg")
 }
+
 .paragraph-justify {
     text-align: justify;
+}
+
+/* Custom styling for the carousel */
+#carouselExampleControls {
+    max-width: 900px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: contain;
+}
+
+
+
+.carousel-control-prev {
+    left: 70px;
+}
+
+.carousel-control-next {
+    right: 70px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) brightness(1.5);
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    #carouselExampleControls {
+        max-width: 95%;
+        margin: 30px auto;
+    }
+
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 200px;
+    }
+
+    .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-control-next {
+        right: 5px;
+    }
 }
